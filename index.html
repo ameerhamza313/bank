@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking System</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #428bca;
+      flex-direction: column;
+    }
+    .login-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    .input-group label,
+    .input-group input {
+      display: block;
+    }
+    .input-group label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .input-group input:focus {
+      outline: none;
+      border-color: #428bca;
+    }
+    .btn-login {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #428bca;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        margin-right: 10px;
+    }
+    .btn-login:hover {
+      background-color: #3071a9;
+    }
+    .welcome-heading {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="welcome-heading">Login To Banking System</div>
+  <div class="login-container">
+    <h2>Login</h2>
+    <div class="input-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your username">
+    </div>
+    <div class="input-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+    <a href="main.html"></a><button class="btn-login" onclick="login()">Login</button></a>
+  </div>
+
+  <script>
+ function login() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // For demonstration purposes, you can check if the username and password match
+      // against some predefined values.
+      const dummyUsername = 'manager';
+      const dummyPassword = 'password';
+
+      if (username === dummyUsername && password === dummyPassword) {
+        // Save the logged-in status in localStorage
+        localStorage.setItem('isLoggedIn', 'true');
+
+        // Redirect to the index.html page
+        window.location.href = 'main.html';
+      } else {
+        // Show the error message for invalid credentials
+        alert('Invalid username or password.');
+        document.getElementById('error-message').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

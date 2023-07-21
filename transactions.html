@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Banking System - Transactions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #428bca;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .transaction-item {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .transaction-item h2 {
+      margin-bottom: 10px;
+    }
+    .transaction-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .transaction-details li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="navbar-brand">Banking System</div>
+    <ul class="navbar-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="accounts.html">Accounts</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="loans.html">Loans</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a onclick="logout()" href="#">Logout</a></li> 
+    </ul>
+  </div>
+  <!-- navbar ends -->
+
+<!-- transaction page -->
+
+  <div class="container">
+    <div class="transaction-item">
+      <h2>Transaction 1</h2>
+      <ul class="transaction-details">
+        <li>Date: 01/07/2023</li>
+        <li>Amount: $245700</li>
+        <li>Transaction Type: Cash</li>
+        <!-- Replace with actual transaction details -->
+      </ul>
+    </div>
+    <div class="transaction-item">
+        <h2>Transaction 2</h2>
+        <ul class="transaction-details">
+          <li>Date: 02/07/2023</li>
+          <li>Amount: $2752700</li>
+          <li>Transaction Type: Cash</li>
+          <!-- Replace with actual transaction details -->
+        </ul>
+      </div>
+      <div class="transaction-item">
+        <h2>Transaction 3</h2>
+        <ul class="transaction-details">
+          <li>Date: 05/07/2023</li>
+          <li>Amount: $24454000</li>
+          <li>Transaction Type: Cash</li>
+          <!-- Replace with actual transaction details -->
+        </ul>
+      </div>
+      <div class="transaction-item">
+        <h2>Transaction 4</h2>
+        <ul class="transaction-details">
+          <li>Date: 08/07/2023</li>
+          <li>Amount: $245700</li>
+          <li>Transaction Type: Net Banking</li>
+          <!-- Replace with actual transaction details -->
+        </ul>
+      </div>
+      <div class="transaction-item">
+        <h2>Transaction 5</h2>
+        <ul class="transaction-details">
+          <li>Date: 10/07/2023</li>
+          <li>Amount: $245700</li>
+          <li>Transaction Type: Deposit</li>
+          <!-- Replace with actual transaction details -->
+        </ul>
+      </div>
+      <div class="transaction-item">
+        <h2>Transaction 6</h2>
+        <ul class="transaction-details">
+          <li>Date: 15/07/2023</li>
+          <li>Amount: $245700</li>
+          <li>Transaction Type: withdrawl</li>
+          <!-- Replace with actual transaction details -->
+        </ul>
+      </div>
+      <div class="transaction-item">
+        <h2>Transaction 7</h2>
+        <ul class="transaction-details">
+          <li>Date: 20/07/2023</li>
+          <li>Amount: $50000</li>
+          <li>Transaction Type: Deposit</li>
+          <!-- Replace with actual transaction details -->
+        </ul>
+      </div>
+  </div>
+
+<!-- transaction page ends -->
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Banking System</title>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="navbar-brand">Banking System</div>
+    <ul class="navbar-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="accounts.html">Accounts</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="loans.html">Loans</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a onclick="logout()" href="#">Logout</a></li> 
+    </ul>
+  </div>
+  <!-- navbar ends -->
+ <!-- home page  -->
+  <div class="container">
+    <div class="welcome-message">
+      Welcome, Manager <!-- Replace with the actual user's name -->
+    </div>
+    <div class="account-overview">
+      <h2>Account Overview</h2>
+      <p>Account Number: 123456789</p> <!-- Replace with the actual account number -->
+      <p>Account Balance: $54623</p> <!-- Replace with the actual account balance -->
+    </div>
+    <div class="transaction-history">
+      <h2>Transaction History</h2>
+      <ul>
+        <li>+ $566</li>
+        <li>- $56514</li>
+        <li>+ $684587</li>
+        <!-- Replace with the actual transaction history -->
+      </ul>
+    </div>
+    <div class="featured-services">
+      <h2>Featured Services</h2>
+      <ul>
+        <li>Money Transfer</li>
+        <li>Apply for Loan</li>
+        <li>Balance Inquiry</li>
+        <!-- Add more featured services as needed -->
+      </ul>
+    </div>
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="accounts.html">Accounts</a></li>
+        <li><a href="transactions.html">Transactions</a></li>
+        <li><a href="loans.html">Loans</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <!-- Add more quick links as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- home page ends -->
+<script src="script.js"></script>
+</body>
+</html>

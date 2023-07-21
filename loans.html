@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Banking System - Loans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #428bca;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .loan-item {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .loan-item h2 {
+      margin-bottom: 10px;
+    }
+    .loan-details {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .loan-details li {
+      margin-bottom: 5px;
+    }
+    .btn-apply {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="navbar-brand">Banking System</div>
+    <ul class="navbar-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="accounts.html">Accounts</a></li>
+      <li><a href="transactions.html">Transactions</a></li>
+      <li><a href="loans.html">Loans</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a onclick="logout()" href="#">Logout</a></li> 
+    </ul>
+  </div>
+  <!-- navbar ends -->
+  <div class="container">
+    <div class="loan-item">
+      <h2>Personal Loan</h2>
+      <ul class="loan-details">
+        <li>Interest Rate: 7.5%</li>
+        <li>Loan Term: 24 months</li>
+        <li>Maximum Amount: 5 lacs</li>
+        <!-- Replace with actual loan details -->
+      </ul>
+      <button class="btn-apply" onclick="applyLoan('Personal Loan')">Apply Now</button>
+    </div>
+    <div class="loan-item">
+      <h2>Home Loan</h2>
+      <ul class="loan-details">
+        <li>Interest Rate: 12%</li>
+        <li>Loan Term: 48 months</li>
+        <li>Maximum Amount: 50 lacs</li>
+        <!-- Replace with actual loan details -->
+      </ul>
+      <button class="btn-apply" onclick="applyLoan('Home Loan')">Apply Now</button>
+    </div>
+    <!-- Add more loan items for additional loan options -->
+  </div>
+
+  <script>
+    function applyLoan(loanType) {
+      // Replace this function with your logic to handle loan application
+      alert(`You have applied for a ${loanType}. We will get back to you soon.`);
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

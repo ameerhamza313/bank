@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #428bca;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .account-overview {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .transaction-history {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .featured-services {
+    margin-bottom: 20px;
+  }
+  .quick-links {
+    margin-bottom: 20px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    background-color: #428bca;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-links li {
+    margin-right: 20px;
+  }
+
+  .navbar-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+
+    .navbar-links {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .navbar-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
